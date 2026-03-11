@@ -49,7 +49,7 @@ const ProductCard = React.memo(
 
         <div className="p-2 sm:p-3 overflow-hidden">
           <span className="text-xs  text-gray-600 uppercase   truncate">
-            {product.category?.name || "Unknown"}
+            {/* {product.category?.name || "Unknown"} */}
           </span>
           <h4 className="my-1 sm:my-2 text-xs sm:text-sm truncate font-semibold">
             <Link

@@ -26,9 +26,9 @@ const ProductCard = React.memo(
 
         <div className="p-3 sm:p-4">
           <span className="text-xs sm:text-sm text-gray-500 uppercase font-bold">
-            {product.category?.name || "Skin And Hair"}
+            {/* {product.category?.name || "Skin And Hair"} */}
           </span>
-          <h4 className="my-2 sm:my-3 text-sm sm:text-base">
+          <h4 className="my-2 sm:my-3 text-sm sm:text-base truncate">
             <Link
               to={`/productdetails/${product._id}`}
               className="text-gray-800 no-underline hover:text-green-600 transition-colors"

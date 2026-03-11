@@ -56,8 +56,8 @@ const ProductCard = React.memo(({ product, inCart, isCartToggling, handleAddToCa
     </Link>
 
     <div className="product-details p-[15px_18px] sm:p-3 max-sm:p-[10px_12px] flex flex-col flex-grow">
-      <span className="text-xs sm:text-sm text-gray-500 uppercase font-bold">
-        {product.category?.name || "Uncategorized"}
+      <span className="text-xs sm:text-sm text-gray-500 uppercase font-bold truncate">
+        {/* {product.category?.name || "Uncategorized"} */}
       </span>
       <h2 className="product-name font-serif text-lg sm:text-base max-sm:text-sm mb-2 whitespace-nowrap overflow-hidden text-ellipsis ">
         {product.name}

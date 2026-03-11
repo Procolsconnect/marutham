@@ -65,9 +65,9 @@ const Categories = () => {
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 />
               </div>
-              <h3 className="text-sm font-medium text-gray-800 mt-3 transition-colors duration-300 group-hover:text-green-600">
+              {/* <h3 className="text-sm font-medium text-gray-800 mt-3 transition-colors duration-300 group-hover:text-green-600">
                 {category.title}
-              </h3>
+              </h3> */}
             </Link>
           ))}
         </div>
