@@ -65,7 +65,7 @@ const ProductCard = React.memo(({ product, inCart, isCartToggling, handleAddToCa
 
       {product.offer_line && (
         <span className="offer-badge text-green-600 font-semibold text-sm sm:text-[0.9rem] max-sm:text-[0.85rem] mb-2 block">
-          {product.offer_line} Launch Offer
+          {product.offer_line}% Launch Offer
         </span>
       )}
       <p className="text-xs sm:text-sm text-gray-700 mb-1 sm:mb-2 overflow-hidden line-clamp-2">
