@@ -108,7 +108,10 @@ const Login = () => {
   return (
     <div>
       <div className="header">
-        <h1>Welcome to Marutham Stores</h1>
+        <h1 className="welcome-title">
+          Welcome to
+          <img src="/loginlogo.jpeg" alt="Marutham Stores Logo" className="login-logo" />
+        </h1>
         <p>Discover natural beauty & skincare products made for you</p>
       </div>
 

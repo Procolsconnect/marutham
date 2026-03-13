@@ -10,11 +10,32 @@ body {
   padding-bottom:20px ;
 }
 
-.header h1 {
-  font-size: 32px;
+.welcome-title {
+  font-size: 28px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
   color: #0c570e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.login-logo {
+  width: 200px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .welcome-title {
+    flex-direction: column;
+   
+  }
+  .login-logo {
+  width: 200px;
+  height: auto;
+}
 }
 
 .header p {
