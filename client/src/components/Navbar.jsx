@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, useCallback } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./Navbar.css";
@@ -80,7 +80,7 @@ const Navbar = () => {
     setSearchResults([...productMatches, ...categoryMatches]);
   }, [searchTerm, products, categories]);
 
-  const handleSearchClick = (item) => {
+  const handleSearchClick = useCallback((item) => {
     if (item.type === "Category") {
       navigate(`/product?category=${item.name}`);
     } else {
@@ -89,7 +89,7 @@ const Navbar = () => {
     setSearchTerm("");
     setSearchResults([]);
     setMenuOpen(false);
-  };
+  }, [navigate]);
 
   return (
     <>
@@ -104,7 +104,7 @@ const Navbar = () => {
 
       <div className="navbar" ref={menuRef}>
         <Link to="/" className="logo" onClick={() => setMenuOpen(false)}>
-          <img src="" alt="M" /> Marutham Stores
+          <img src="/logo.png" alt="M" className="logo-img" /> 
         </Link>
 
         <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
@@ -190,7 +190,7 @@ const Navbar = () => {
           </Link>
           <Link to="/cart" onClick={() => setMenuOpen(false)}>
             <button className="cart-btn">
-              <i className="fas fa-shopping-cart"></i> Cart
+              <i className="fas fa-shopping-cart"></i> <span>Cart</span>
             </button>
           </Link>
         </div>
@@ -199,4 +199,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default React.memo(Navbar);

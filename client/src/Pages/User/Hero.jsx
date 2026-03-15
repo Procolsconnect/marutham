@@ -78,13 +78,13 @@ const Hero = () => {
               className="w-full"
             >
               {/* Replace <img> with wrapper div */}
-              <div className="w-full h-[200px] sm:h-[200px] md:h-[400px] lg:h-[410px] overflow-hidden rounded-lg">
+              <div className="w-full h-[200px] sm:h-[200px] md:h-[400px] lg:h-[440px] overflow-hidden">
                 <img
                   src={slide.image}
                   alt={slide.productName}
                   loading={index === 0 ? "eager" : "lazy"}
                   fetchpriority={index === 0 ? "high" : "auto"}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-fill"
                 />
               </div>
             </Link>
@@ -95,4 +95,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default React.memo(Hero);

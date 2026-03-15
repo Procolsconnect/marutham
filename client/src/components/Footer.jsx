@@ -17,14 +17,14 @@ const Footer = () => {
         <div>
           <div className="flex items-center gap-2   md:mb-3">
             <img
-              src="/india.png"
-              alt="logo"
-              className="w-7 h-7 md:w-8 md:h-8"
+              src="/logo.png"
+              alt="Marutham Stores Logo"
+              className="w-16 h-auto md:w-30 "
             />
-            <h2 className="font-bold text-lg md:text-xl text-white">Marutham Stores</h2>
+            <h2 className="font-bold text-lg md:text-xl text-white"></h2>
           </div>
           <p className="text-xs md:text-sm leading-5 md:leading-6">
-            Your one-stop destination for premium beauty, skincare, and wellness
+            Your one-stop destination for premium  Food items, skincare, and wellness
             products.
           </p>
 
@@ -33,11 +33,11 @@ const Footer = () => {
             <a href="https://www.instagram.com/_maruthamstores_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="w-7 h-7 md:w-8 md:h-8 flex items-center justify-center bg-gray-800 rounded hover:bg-gray-600">
               <FaInstagram />
             </a>
-            <a href="https://wa.me/8870757606?text=Hello%20I%20want%20to%20know%20more
+            <a href="https://wa.me/9750530288?text=Hello%20I%20want%20to%20know%20more
 " className="w-7 h-7 md:w-8 md:h-8 flex items-center justify-center bg-gray-800 rounded hover:bg-gray-600">
               <FaWhatsapp />
             </a>
-          </div>
+          </div> 
         </div>
 
         {/* Quick Links */}
@@ -69,7 +69,7 @@ const Footer = () => {
               <FaEnvelope className="text-[#d19a74]" /> maruthamstores24@gmail.com
             </li>
             <li className="mt-1 flex items-center gap-2 text-xs md:text-sm">
-              <FaPhoneAlt className="text-[#d19a74]" /> +91 90036 89821
+              <FaPhoneAlt className="text-[#d19a74]" /> +91 97505 30288
             </li>
           </ul>
         </div>
@@ -78,22 +78,25 @@ const Footer = () => {
         <div>
           <h3 className="text-base md:text-lg font-semibold text-white mb-2 md:mb-3">Marutham Stores</h3>
           <p className="text-xs md:text-sm leading-5 md:leading-6">
-            202, Bhavani Main Road, Vaikalamedu, <br />
-            Chithode, Erode - 638102, Tamil Nadu
+            1/4, East street, 
+palamedu ,
+vadipatti taluk, 
+madurai -625 503
+
           </p>
           <p className="mt-1 md:mt-2 text-xs md:text-sm pb-1 md:pb-2">
-            Founder & Co-founder: Mr Tamilselvan Moorthi
+            Founder: Mr Karthick Arumugam
           </p>
         </div>
       </div>
 
       {/* Bottom Bar */}
       <div className="bg-black py-2 md:py-3 text-center text-xs md:text-sm text-gray-400">
-        <p>© 2025 Marutham Stores. All rights reserved.</p>
+        <p>© 2026 Marutham Stores. All rights reserved.</p>
         <p>Made By Procols.</p>
       </div>
     </footer>
   );
 };
 
-export default Footer;
+export default React.memo(Footer);
